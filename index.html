@@ -9,9 +9,16 @@
 <body>
   <div class="container">
     <h1>Team KPI Dashboard</h1>
-    <div class="kpi-grid" id="kpiGrid">
-      <!-- KPI cards will be inserted here dynamically -->
+    <div class="filters">
+      <input type="date" id="filterDate" />
+      <input type="text" id="filterEmail" placeholder="Filter by email" />
+      <select id="filterPeriod">
+        <option value="day">Daily</option>
+        <option value="week">Weekly</option>
+        <option value="month">Monthly</option>
+      </select>
     </div>
+    <div class="kpi-grid" id="kpiGrid"></div>
   </div>
   <script src="script.js"></script>
 </body>
